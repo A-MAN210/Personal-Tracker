@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Log</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f172a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <div class="masthead">
+    <div>
+      <div class="sub">Personal logbook</div>
+      <h1>The Log</h1>
+    </div>
+    <div class="datebadge" id="today-badge"></div>
+  </div>
+
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-tab="today"><span class="dot" style="color:var(--brass)"></span>Today</button>
+    <button class="tab" data-tab="habits"><span class="dot" style="color:var(--habits)"></span>Habits</button>
+    <button class="tab" data-tab="tasks"><span class="dot" style="color:var(--tasks)"></span>Tasks</button>
+    <button class="tab" data-tab="mood"><span class="dot" style="color:var(--mood)"></span>Mood</button>
+    <button class="tab" data-tab="finance"><span class="dot" style="color:var(--finance)"></span>Money</button>
+    <button class="tab" data-tab="health"><span class="dot" style="color:var(--health)"></span>Health</button>
+    <button class="tab" data-tab="goals"><span class="dot" style="color:var(--goals)"></span>Goals</button>
+    <button class="tab" data-tab="journal"><span class="dot" style="color:var(--journal)"></span>Journal</button>
+    <button class="tab" data-tab="tomorrow"><span class="dot" style="color:var(--tomorrow)"></span>Tomorrow</button>
+    <button class="tab" data-tab="challenges"><span class="dot" style="color:var(--challenges)"></span>Challenges</button>
+    <button class="tab" data-tab="phone"><span class="dot" style="color:var(--phone)"></span>Phone</button>
+    <button class="tab" data-tab="activity"><span class="dot" style="color:var(--activity)"></span>Activity</button>
+    <button class="tab" data-tab="achievements"><span class="dot" style="color:var(--achievements)"></span>Achievements</button>
+    <button class="tab" data-tab="review"><span class="dot" style="color:var(--review)"></span>AI Review</button>
+  </nav>
+
+  <main id="main">
+    <div class="loading">Opening the log…</div>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
